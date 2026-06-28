@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тёмная — обжарочная specialty-кофе</title>
+  <meta name="description" content="Specialty-кофе ручной обжарки малыми партиями. Прозрачное происхождение, свежая обжарка каждую неделю." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- announcement -->
+  <div class="topbar">Бесплатная доставка от 2 500 ₽ · Обжарка по четвергам</div>
+
+  <!-- nav -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#">
+        <span class="brand__mark" aria-hidden="true">●</span> ТЁМНАЯ<span class="brand__dot">.</span>
+      </a>
+      <nav class="nav__links" aria-label="Основная навигация">
+        <a href="#catalog">Каталог</a>
+        <a href="#">Подписка</a>
+        <a href="#">О нас</a>
+        <a href="#">Журнал</a>
+      </nav>
+      <button class="nav__cart" type="button" aria-label="Корзина">Корзина · 0</button>
+    </div>
+  </header>
+
+  <!-- hero -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">Specialty coffee · ручная обжарка</p>
+        <h1 class="hero__title">Кофе, который<br><em>раскрывается</em> в чашке</h1>
+        <p class="hero__lead">Зёрна с прозрачным происхождением, обжаренные малыми партиями. От цветочной Эфиопии до плотной шоколадной Бразилии.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#catalog">Смотреть каталог</a>
+          <a class="btn btn--ghost" href="#">Оформить подписку</a>
+        </div>
+        <ul class="hero__stats" role="list">
+          <li><strong>48ч</strong><span>от обжарки до отправки</span></li>
+          <li><strong>12</strong><span>стран происхождения</span></li>
+          <li><strong>4.9</strong><span>средний рейтинг</span></li>
+        </ul>
+      </div>
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__bag">
+          <svg viewBox="0 0 220 300" width="100%" height="100%" role="img" aria-label="Пакет кофе">
+            <defs>
+              <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#3a2a20"/><stop offset="1" stop-color="#1c130d"/>
+              </linearGradient>
+            </defs>
+            <rect x="20" y="40" width="180" height="240" rx="14" fill="url(#hg)"/>
+            <path d="M20 54 q90 22 180 0 v-14 H20 Z" fill="#0e0a07" opacity=".5"/>
+            <rect x="46" y="108" width="128" height="104" rx="8" fill="#f7efe2"/>
+            <text x="110" y="142" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#2a211b" font-style="italic">Yirgacheffe</text>
+            <text x="110" y="166" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" letter-spacing="2" fill="#a8552e">ЭФИОПИЯ · СВЕТЛАЯ</text>
+            <circle cx="110" cy="192" r="10" fill="none" stroke="#a8552e" stroke-width="1.5"/>
+            <text x="110" y="196" text-anchor="middle" font-family="Inter" font-size="9" fill="#2a211b">250g</text>
+          </svg>
+        </div>
+        <span class="hero__steam s1"></span>
+        <span class="hero__steam s2"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- catalog -->
+  <main>
+    <section id="catalog" class="catalog" aria-labelledby="catalog-title">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow">Свежая обжарка каждую неделю</p>
+            <h2 id="catalog-title" class="section-title">Избранные сорта</h2>
+          </div>
+          <p class="section-note">Каждую партию катаем (cupping) перед отправкой — в карточке только то, что прошло дегустацию.</p>
+        </header>
+
+        <ul class="grid" role="list">
+          <!-- карточки генерируются по шаблону ниже -->
+          <li class="card" style="--accent:#d8b15f">
+            <div class="card__media"><div class="bag"></div><span class="badge badge--new">Новинка</span></div>
+            <div class="card__body">
+              <div class="card__head"><h3 class="card__title">Ethiopia Yirgacheffe</h3><span class="card__rating">★ 4.9</span></div>
+              <p class="card__origin">Эфиопия · Гедео</p>
+              <p class="card__notes">жасмин · цитрус · мёд</p>
+              <p class="card__meta">Светлая обжарка · 250 г</p>
+              <div class="card__footer"><p class="card__price">1 290 ₽</p><button class="btn btn--add" type="button" aria-label="Добавить Ethiopia Yirgacheffe в корзину">В корзину</button></div>
+            </div>
+          </li>
+
+          <li class="card" style="--accent:#b9743f">
+            <div class="card__media"><div class="bag"></div><span class="badge badge--hit">Хит</span></div>
+            <div class="card__body">
+              <div class="card__head"><h3 class="card__title">Colombia Huila</h3><span class="card__rating">★ 4.8</span></div>
+              <p class="card__origin">Колумбия · Уила</p>
+              <p class="card__notes">молочный шоколад · карамель · слива</p>
+              <p class="card__meta">Средняя обжарка · 250 г</p>
+              <div class="card__footer"><p class="card__price"><span class="card__price-old">1 350 ₽</span> 1 150 ₽</p><button class="btn btn--add" type="button" aria-label="Добавить Colombia Huila в корзину">В корзину</button></div>
+            </div>
+          </li>
+
+          <li class="card" style="--accent:#9e4b3f">
+            <div class="card__media"><div class="bag"></div><span class="badge badge--new">Новинка</span></div>
+            <div class="card__body">
+              <div class="card__head"><h3 class="card__title">Kenya Nyeri AA</h3><span class="card__rating">★ 4.9</span></div>
+              <p class="card__origin">Кения · Ньери</p>
+              <p class="card__notes">чёрная смородина · грейпфрут · вино</p>
+              <p class="card__meta">Светлая обжарка · 250 г</p>
+              <div class="card__footer"><p class="card__price">1 420 ₽</p><button class="btn btn--add" type="button" aria-label="Добавить Kenya Nyeri AA в корзину">В корзину</button></div>
+            </div>
+          </li>
+
+          <li class="card" style="--accent:#7c5a38">
+            <div class="card__media"><div class="bag"></div></div>
+            <div class="card__body">
+              <div class="card__head"><h3 class="card__title">Brazil Cerrado</h3><span class="card__rating">★ 4.7</span></div>
+              <p class="card__origin">Бразилия · Серрадо</p>
+              <p class="card__notes">арахис · какао · нуга</p>
+              <p class="card__meta">Тёмная обжарка · 250 г</p>
+              <div class="card__footer"><p class="card__price">990 ₽</p><button class="btn btn--add" type="button" aria-label="Добавить Brazil Cerrado в корзину">В корзину</button></div>
+            </div>
+          </li>
+
+          <li class="card" style="--accent:#6f5235">
+            <div class="card__media"><div class="bag"></div><span class="badge badge--hit">Хит</span></div>
+            <div class="card__body">
+              <div class="card__head"><h3 class="card__title">Guatemala Antigua</h3><span class="card__rating">★ 4.8</span></div>
+              <p class="card__origin">Гватемала · Антигуа</p>
+              <p class="card__notes">тёмный шоколад · апельсин · специи</p>
+              <p class="card__meta">Средняя обжарка · 250 г</p>
+              <div class="card__footer"><p class="card__price">1 250 ₽</p><button class="btn btn--add" type="button" aria-label="Добавить Guatemala Antigua в корзину">В корзину</button></div>
+            </div>
+          </li>
+
+          <li class="card" style="--accent:#7f9e6b">
+            <div class="card__media"><div class="bag"></div><span class="badge badge--rare">Редкость</span></div>
+            <div class="card__body">
+              <div class="card__head"><h3 class="card__title">Panama Geisha</h3><span class="card__rating">★ 5.0</span></div>
+              <p class="card__origin">Панама · Бокете</p>
+              <p class="card__notes">бергамот · жасмин · персик</p>
+              <p class="card__meta">Светлая обжарка · 200 г</p>
+              <div class="card__footer"><p class="card__price">2 490 ₽</p><button class="btn btn--add" type="button" aria-label="Добавить Panama Geisha в корзину">В корзину</button></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="brand brand--footer"><span class="brand__mark" aria-hidden="true">●</span> ТЁМНАЯ<span class="brand__dot">.</span></p>
+      <p class="footer__note">Обжарочная малых партий · Москва · с 2019</p>
+    </div>
+  </footer>
+</body>
+</html>
