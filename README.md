@@ -3,6 +3,8 @@
 Адаптивный лендинг обжарочной кофе ручной обжарки: hero-секция и каталог
 из 6 карточек товара. Чистый **HTML5 + CSS3**, без UI-китов и фреймворков.
 
+🔗 **Демо:** https://m00n77.github.io/coffee_shop/
+
 ![Скриншот сайта](screenshots/Screenshot_5.png)
 ![Скриншот сайта](screenshots/Screenshot_6.png)
 
