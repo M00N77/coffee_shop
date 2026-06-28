@@ -5,8 +5,8 @@
 
 🔗 **Демо:** https://m00n77.github.io/coffee_shop/
 
-![Скриншот сайта](screenshots/Screenshot_5.png)
 ![Скриншот сайта](screenshots/Screenshot_6.png)
+![Скриншот сайта](screenshots/Screenshot_7.png)
 
 ---
 
